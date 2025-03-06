@@ -1,0 +1,71 @@
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.smth {
+  height: 60px;
+  width: 75px;
+  margin: 20px;
+  margin-left: 60px;
+}
+
+.header {
+  background-color: #d4a373;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-right: 50px;
+}
+
+.head {
+  background-color: #ddb892;
+}
+
+.amth {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.dark-mode {
+  background: #222;
+  color: #fff;
+}
+
+#themeToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  
+}
+
+
+
+.change-lang {
+  margin-right: 30px;
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  background: white;
+  color: black;
+
+}
+.ulli{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 290px;
+}
+
+.a{
+  display: flex;
+}

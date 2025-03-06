@@ -1,0 +1,2503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyusqan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        @keyframes marquee {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(100%); }
+        }
+
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 5s linear infinite;
+        }
+
+
+        @media (max-width: 768px) {
+        .animate-marquee {
+            font-size: 14px; 
+            animation-duration: 7s; 
+        }
+     }
+
+        @media (max-width: 480px) {
+        .animate-marquee {
+            font-size: 12px; 
+            animation-duration: 9s;
+        }
+     }
+
+     .no-scroll {
+            overflow: hidden;
+        }
+
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+       
+      </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./git.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+</head>
+<body>
+ 
+  <header>
+    <div class="men">
+      <input type="checkbox" name="" id="men" />
+      <div class="logo">
+        <img src="tyusqan.png" alt="logo" class='smth'>
+        <label for="men"></label>
+      </div>
+  
+      <div class="items">
+        
+        <a href="./index.html" data-lang="home" class="item">Басты бет</a>
+        <a href="./menu.html" data-lang="menu" class="item">Меню</a>
+        <a href="./clients.html" data-lang="about" class="item">Біз туралы</a>
+        <a href="#footer" data-lang="contact" class="item">Контакта</a>
+  
+        <div class="e">
+          <div class="scrolling-number">
+            
+            <a href="https://wa.me/77053554087" class="nom">
+              <img src="phone.png" alt="WhatsApp" class="amth" />
+            </a>
+            
+            <select id="change-lang">
+              <option value="kz">KZ</option>
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+              
+              
+          </select>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </header>
+
+      <section style="background-image: url('./89.png') ; background-size: cover; background-position: center;   " class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+         
+          <div class="menu" id="menu"></div>
+          
+
+          <h2 data-lang="a" class="headline-1 section-title">We Offer Top Notch</h2>
+
+       
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./IMG_6391.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#" data-lang="br">Breakfasts <br> Main dishes</a>
+                  </h3>
+
+                  <a href="#food" data-lang="p" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./IMG_6255.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#" data-lang="r">Desserts</a>
+                  </h3>
+
+                  <a href="#d" data-lang="a" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./IMG_6392.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#" data-lang="e">Bar</a>
+                  </h3>
+
+                  <a href="#p" data-lang="p" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        
+
+        </div>
+      </section>
+
+
+      <div class="menn">
+        <section class="section menu" style="background-color: #d4a373;" aria-label="menu-label" id="menu">
+          <div class="container">
+  
+            <p class="section-subtitle text-center label-2" data-lang="w">Special Selection</p>
+  
+            <h2 class="headline-1 section-title text-center" id="food" data-lang="br">Breakfasts and Main Dishes</h2>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" data-lang="o" class="card-title">Kasha</a>
+                      </h3>
+                     
+  
+                      <span class="span title-2">990 KZT</span>
+                    </div>
+                    <span class="badge label-1">(kürişten, sülıdan, mannan)
+                    </span>
+                    <p class="card-text label-1">
+                      Каша на молоке, лепестки миндаля, банан и ягоды
+
+                    </p>
+                    <div class="food-line"></div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                        <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Ağylşyn tañğı asy
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">2690 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Глазунья, охотничьи колбаски, жареные шампиньоны, свежие помидоры и огурцы, багет, сливочное масло
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+              
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Şotland tañğı asy
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">2590 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Глазунья, охотничьи колбаски, куриное филе холодного копчения, свежие помидоры и огурцы, багет
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+              
+
+
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Francuz tañğı asy
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">2290 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Нежный молочный омлет с миксом салата и помидорами черри, багет
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Bavar tañğı asy
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2290 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Баварский омлет с охотничьими колбасками, шпинатом и сыром рикотта
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Qazaq tañğı asy
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2290 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Казахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title"> Úi kespesi
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1690 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Куриное филе, сладкий перец, яичная лапша, куриный бульон, зелень
+
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Tawyk eti qosyłǵan ramen 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2590 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Куриное филе, грибы, лапша рамен, яйцо, соус для рамена
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Tom Yam
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2790 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Бульон том-ям, грибы, креветки, подается с рисом
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Fetuchini pastasy
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2790 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Паста фетучини, помидоры черри, сливки, сыр пармезан и специи
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+        
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Tawyk etinen udon
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2690 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      Куриное филе, лапша удон, перец сладкий, кабачки
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+              <li>
+               
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Jasymyk krem-sorpasy
+
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1690 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Куриное филе, лапша удон, перец сладкий, кабачки
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+
+              <li>
+               
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Pelmeni
+
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1690 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Куриное филе, лапша удон, перец сладкий, кабачки
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+               
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Tawyk etinen frikase
+
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2690 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Куриное филе, лапша удон, перец сладкий, кабачки
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              
+              
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Sańyrawqúlaq krem-sorpasy
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1690 KZT</span>
+                    </div>
+  
+                    <p class="card-text label-1">
+                      
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Tawyk eti koreishe qyshqyl-tatti tuzdyqta
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 2690 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Куриное филе, лапша удон, перец сладкий, кабачки
+
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+           
+
+
+
+
+
+  
+
+            </ul>
+
+  
+            <a href="#" class="btn">
+              <span class="text text-1">View All Menu</span>
+  
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+  
+     
+
+          </div>
+        </section>
+
+
+
+
+
+      <div class="menn">
+        <section class="section menu" style="background-color: #d4a373;" aria-label="menu-label" id="menu">
+          <div class="container">
+  
+            <p class="section-subtitle text-center label-2" data-lang="w">Special Selection</p>
+  
+            <h2 class="headline-1 section-title text-center" id="p" data-lang="">Bar</h2>
+  
+            <ul class="grid-list">
+   
+              <li>
+              
+                <div class="menu-card hover:card">
+  
+                  <div>
+                    <span class="badge label-1">Avtordyq Coffee  </span>
+                   
+                    <div class="title-wrapper">
+                     
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Talqan Latte 350 ml </a>
+                      </h3>
+                     
+  
+                      <span class="span title-2">1490 KZT</span>
+                    </div>
+                    
+                    
+                    <p class="cardd-text label-1">
+                      Каша на молоке, лепестки миндаля, банан и ягоды
+
+                    </p>
+                
+                  </div>
+  
+                </div>
+              </li>
+  
+            
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Arahisovy Latte 350 ml
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1490 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Глазунья, охотничьи колбаски, жареные шампиньоны, свежие помидоры и огурцы, багет, сливочное масло
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+              
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Popcorn Raf 350 ml
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1490 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Глазунья, охотничьи колбаски, куриное филе холодного копчения, свежие помидоры и огурцы, багет
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+              
+    
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Mokko 350 ml
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1490 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Нежный молочный омлет с миксом салата и помидорами черри, багет
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                <div class="menu-card hover:card">
+  
+                
+  
+                  <div>
+  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Kakao marshmellowmen 350 ml
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1490
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Баварский омлет с охотничьими колбасками, шпинатом и сыром рикотта
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <span class="badge label-1">Klassikalyq Coffee
+                    </span>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Espresso 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 890  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Amerikano 250/350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 890 / 1090 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Kapuchino 250/350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 890 / 1090 KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Latte 350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1190 tg
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Flat White 350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 890 
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Raf 350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 1190 
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Garysh shokolad 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 990 
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Kakao 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 990 
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <span class="badge label-1">ICE Coffee
+                    </span>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">ICE Latte 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">ICE Amerikano 350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1090  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">ICE Kapuchino 350 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">ICE Raf 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1290  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+               
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Bambl Kofe 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1590  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+ 
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Glyasse 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Espresso Tonik 350 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Frappuchino 350 ml 
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <span class="badge label-1">Lemonade
+
+                    </span>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Apelsinovyı (Apelsin) 400 ml / 1L 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190 / 2390 
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Kivi-Laiym 400 ml / 1L 
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190 / 2390  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">	Mohito 400 ml / 1L 
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190 / 2390  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Jideli (Jidek) 400 ml / 1L
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190 / 2390  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                   
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Mango-Marakuıa 400 ml / 1L
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1190 / 2390  KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+  
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <span class="badge label-1">Milkshake
+
+
+                    </span>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Klassikalyq 400 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Şokoladty 400 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Bananovyı 400 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Klubnichnyı 400 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1690
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Oreo 400 ml
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1990
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                  
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Snickers 400 ml 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1990
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <span class="badge label-1">Tea
+
+
+                    </span>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Qara / Jasyl 400 ml / 1L 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">590 / 1090 
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">	Oblepihovyı 400 ml / 1L
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">990 / 1690 
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">	Apelsin myatamen 400 ml / 1L
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">990 / 1690 
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">	Glintveın 400 ml / 1L
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2">1290 / 1890 
+
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">	Qazaqşay 400 ml / 1L
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 990 / 1690 
+
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Tashkentşay 400 ml / 1L 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 990 / 1690 
+
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+
+
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Imbirli 400 ml / 1L 
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 990 / 1690 
+
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+
+              
+              <li>
+                
+                <div class="menu-card hover:card">
+  
+                 
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#"  class="card-title">Jideli (Jidek) 400 ml / 1L
+
+
+
+
+                        </a>
+                      </h3>
+  
+                      <span class="span title-2"> 990 / 1690 
+
+
+                        KZT</span>
+                    </div>
+  
+                    <p class="cardd-text label-1">
+                      Кахахский бауырсақ, сметана, қазы, микс салата 
+
+
+
+
+
+
+                    </p>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              
+
+
+
+
+  
+            </ul>
+             <!-- <ul class="grid-list">
+            <li>
+              <div class="menu-container">
+                <div class="column" id="column1"></div>
+                 <div class="column2" id="column2"></div>
+               </div>
+                  </li>
+            </ul> -->
+   
+            <a href="#" class="btn">
+              <span class="text text-1">View All Menu</span>
+  
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+  
+         
+          </div>
+
+        </div>
+          </ul>
+        </section>
+
+
+
+<div class="bd" id="d" style="background-image: url('./IMG_6427.jpg') ; background-size: cover; background-position: center;">
+      <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide"><img src="./IMG_6255.jpg" alt="Nature"><div class="caption">Merengue Rulet</div></div>
+            <div class="slide"><img src="./IMG_6256.jpg" alt="Wedding"><div class="caption">Molochnaya Devochka</div></div>
+            <div class="slide"><img src="./IMG_6257.jpg" alt="Fashion"><div class="caption">Black forest Cake</div></div>
+            <div class="slide"><img src="./IMG_6258.jpg" alt="City"><div class="caption">Light Berry Sponge Cake</div></div>
+            <div class="slide"><img src="./IMG_6259.jpg" alt="Beach"><div class="caption">CheeseCake</div></div>
+            <div class="slide"><img src="./IMG_6402.jpg" alt="Beach"><div class="caption">Blackout Cake</div></div>
+            <div class="slide"><img src="./IMG_6403.jpg" alt="Beach"><div class="caption">Chocolate Cream Cake</div></div>
+            <div class="slide"><img src="./IMG_6404.jpg" alt="Beach"><div class="caption">Cheese Cake</div></div>
+            <div class="slide"><img src="./IMG_6258.jpg" alt="Beach"><div class="caption">Light Berry Sponge Cake</div></div>
+            <div class="slide"><img src="./IMG_6257.jpg" alt="Beach"><div class="caption">Black forest Cake</div></div>
+            <div class="slide"><img src="./IMG_6402.jpg" alt="Beach"><div class="caption">Blackout Cake</div></div>
+            <div class="slide"><img src="./IMG_6403.jpg" alt="City"><div class="caption">Chocolate Cream Cake</div></div>
+            
+        </div>
+        <div class="buttons">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </div>
+</div>    
+        
+
+
+
+
+
+<footer id="footer" class="tracking-wide bg-[#d4a373] pt-12 pb-4 px-10" >
+  <div class="w grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-screen-xl mx-auto">
+    <div>
+      <h4 class="text-[#FFFFFF] font-semibold text-[20px] mb-6" data-lang="about" >About us</h4>
+      <ul class="a space-y-1">
+        <li>
+          <a href="https://www.instagram.com/tuysqan.taraz/"> <img src="icons8-instagram-50.png" width="30px"></a>
+        </li>
+        <li>
+          <a href="https://wa.me/77053554087"> <img src="./icons8-whatsapp-50.png" width="30px"></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@tuysqan.taraz?_t=ZM-8uLNwVhw0bG&_r=1"> <img src="./icons8-tik-tok-50.png" width="30px"></a>
+        </li>
+       
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-[#FFFFFF] font-semibold text-[20px] mb-6" data-lang="ex">Explore</h4>
+      <ul class="space-y-5">
+        <li>
+          <a href="./index.html" data-lang="home" class="hover:text-[#FFFFFF] text-white-300 text-[15px] transition-all">Home</a>
+        </li>
+        <li>
+          <a href="./menu.html" data-lang="menu" class="hover:text-[#FFFFFF] text-white-300 text-[15px] transition-all">Menu</a>
+        </li>
+        <li>
+          <a href="./clients.html" data-lang="about" class="hover:text-[#FFFFFF] text-white-300 text-[15px] transition-all">Clients</a>
+        </li>
+       
+      </ul>
+    </div>
+
+
+    <div>
+      <h4 class="text-[#FFFFFF] font-semibold text-[20px] mb-6" data-lang="contact">Contact Info</h4>
+      <ul class="space-y-5">
+        <li class="o">
+          <img src="./icons8-email-50.png" width="25px"><a href="https://www.instagram.com/nurhan.meirasbek/">@tuysqan.taraz@gmail.com</a>
+        </li>
+        <li class="o">
+          <img src="./icons8-phone-50.png" width="25px"><a href="https://www.instagram.com/nurhan.meirasbek/">+7 705 355 4087</a>
+        </li>
+        <li class="o">
+          <img src="./icons8-location-50.png" width="30px"><a href="https://maps.apple.com/?address=%D0%97%D0%B0%D0%B2%D0%BA%D0%BE%D0%BC%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,%20Taraz,%20Jambyl,%20Kazakhstan&ll=42.901800,71.342500&q=%D0%97%D0%B0%D0%B2%D0%BA%D0%BE%D0%BC%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F&t=m">Tole bi 118, JK "Arai Park"</a>
+        </li>
+        
+      </ul>
+    </div>
+
+
+    <div>
+      <h4 class="text-[#FFFFFF] font-semibold text-[20px] mb-6" data-lang="op">Open-Close</h4>
+      <ul class="space-y-5">
+        <li class="o">
+         <a href="https://www.instagram.com/nurhan.meirasbek/">Every day: 08:00/00:00</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+
+   
+      
+  </div>
+
+  
+</footer>
+
+        
+  
+  
+  
+  
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="./lung.js"></script>
+      <script src="./script.js"></script>
+  </body>
+  </html>
